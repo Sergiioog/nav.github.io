@@ -66,19 +66,41 @@ main {
     -webkit-backdrop-filter: blur( 7px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+   
 }
 
 .imagen_card {
-    background-color: red;
-    height: 150px;
-    width: 150px;
-
+    height: 30%;
+    width: 30%;
 }
 .image {
     height: 100%;
     width: 100%;
 }
 
+.seccion_titulo_datos {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.titulo_navegador {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 35%;
+}
+.titulo_navegador h3 {
+    width: 100%; /* Hacer que el párrafo ocupe el 100% del ancho del contenedor */
+    height: 100%; /* Hacer que el párrafo ocupe el 100% del alto del contenedor */
+    margin: 0; /* Eliminar el margen predeterminado del párrafo */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el texto */
+    justify-content: center; /* Centrar horizontalmente el texto */
+}
 
 
 
