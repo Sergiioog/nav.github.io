@@ -54,6 +54,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .nav_card {
@@ -117,6 +118,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:  18px;
 }
 
 .datos_navegador {
@@ -170,6 +172,7 @@ main {
 
 /*------------------FIN BODY----------------------------*/
 footer {
+    position: fixed;
     height: 5vh;
     background-color: rgb(51, 69, 84);
 }
