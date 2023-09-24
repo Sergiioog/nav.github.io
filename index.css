@@ -34,11 +34,12 @@ header {
 .links_pagina, a {
     text-decoration: none;
     margin: 15px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
     
 }
 .links_pagina a:hover {
     transform: translateY(-2px);
-    transition: transform 0.5s;
 }
 /*------------------FIN HEADER----------------------------*/
 /*------------------INICIO BODY----------------------------*/
@@ -53,27 +54,40 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .nav_card {
     height: auto;
     width: 80%;
-    margin-top: 50px; /*REVISAR*/
+    margin-top: 50px;
     display: flex;
-    background: rgba( 247, 231, 231, 0.25 );
+    flex-direction: column; /* Cambiar a dirección de columna para apilar seccion1 y seccion2 */
+    background: rgba(247, 231, 231, 0.25);
     box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 10px;
-   
+    margin-right: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+
+}
+.nav_card:hover {
+    transform: translateY(-2px);
+}
+
+.seccion1 {
+    display: flex;
+    width: 100%;
 }
 
 .imagen_card {
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
 }
+
 .image {
     height: 100%;
     width: 100%;
@@ -86,21 +100,55 @@ main {
     position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
 .titulo_navegador {
     position: absolute;
     top: 0;
-    width: 90%;
-    height: 35%;
+    width: 95%;
+    height: 15%;
 }
+
 .titulo_navegador h3 {
-    width: 100%; /* Hacer que el párrafo ocupe el 100% del ancho del contenedor */
-    height: 100%; /* Hacer que el párrafo ocupe el 100% del alto del contenedor */
-    margin: 0; /* Eliminar el margen predeterminado del párrafo */
+    width: 95%;
+    height: 100%;
+    margin: 0;
     display: flex;
-    align-items: center; /* Centrar verticalmente el texto */
-    justify-content: center; /* Centrar horizontalmente el texto */
+    align-items: center;
+    justify-content: center;
 }
+
+.datos_navegador {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos_navegador ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.seccion2 {
+    width: 100%;
+    height: 100%;
+    text-align: justify; /* Justificar el texto */
+ 
+}
+.seccion2 p {
+    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
 
 
 
