@@ -48,7 +48,7 @@ main {
     width: 100%;
 }
 /*------INICIO NAVEGADORES------*/
-.seccion_navegadores {
+.seccion_navegadores, .seccion_desarrollo {
     height: auto;
     width: 100%;
     display: flex;
@@ -154,22 +154,63 @@ main {
     padding-right: 3%;
 }
 
-
-
-
-
-
-
-
-
 /*------FIN NAVEGADORES------*/
 
-
-
-
-
-
 /*------INICIO DESARROLLO------*/
+
+.container_secciones {
+    width: 95%;
+    height: 100vh;
+    margin: 10px;
+}
+
+.container_front {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    margin-top: 50px;
+}
+.front_titulo {
+    background-color: beige;
+    height: 5%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front_cuerpo {
+    background-color: brown;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.foto_front {
+    width: 100%;
+    height: 100%;
+}
+.foto_front, img {
+    width: 90%;
+    height: 100%;
+}
+
+
+
+
+
+
+.container_back {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 /*------FIN DESARROLLO------*/
 
