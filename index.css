@@ -1,0 +1,228 @@
+body {
+    background-image: url('assets/images/fondo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+/*------------------INICIO HEADER----------------------------*/
+header {
+    height: 5vh;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.links_pagina {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: rgba( 240, 207, 207, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba(126, 126, 133, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.links_pagina, a {
+    text-decoration: none;
+    margin: 15px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    
+}
+.links_pagina a:hover {
+    transform: translateY(-2px);
+}
+/*------------------FIN HEADER----------------------------*/
+/*------------------INICIO BODY----------------------------*/
+main {
+    height: 95vh;
+    width: 100%;
+}
+/*------INICIO NAVEGADORES------*/
+.seccion_navegadores, .seccion_desarrollo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav_card {
+    height: auto;
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Cambiar a dirección de columna para apilar seccion1 y seccion2 */
+    background: rgba(247, 231, 231, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    margin-right: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+
+}
+.nav_card:hover {
+    transform: translateY(-2px);
+}
+
+.seccion1 {
+    display: flex;
+    width: 100%;
+}
+
+.imagen_card {
+    height: 50%;
+    width: 50%;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+.seccion_titulo_datos {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo_navegador {
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 15%;
+}
+
+.titulo_navegador h3 {
+    width: 95%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:  18px;
+}
+
+.datos_navegador {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos_navegador ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+}
+.datos_navegador,li {
+    width: 100%;
+    height: 100%;
+}
+
+.seccion2 {
+    width: 100%;
+    height: 100%;
+    text-align: justify; /* Justificar el texto */
+ 
+}
+.seccion2 p {
+    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*------FIN NAVEGADORES------*/
+
+/*------INICIO DESARROLLO------*/
+
+.container_secciones {
+    width: 95%;
+    height: 100vh;
+    margin: 10px;
+}
+
+.container_front {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    margin-top: 50px;
+}
+.front_titulo {
+    background-color: beige;
+    height: 5%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front_cuerpo {
+    background-color: brown;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.foto_front {
+    width: 100%;
+    height: 100%;
+}
+.foto_front, img {
+    width: 90%;
+    height: 100%;
+}
+
+
+
+
+
+
+.container_back {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*------FIN DESARROLLO------*/
+
+
+/*------------------FIN BODY----------------------------*/
+footer {
+    position: fixed;
+    height: 5vh;
+    background-color: rgb(51, 69, 84);
+}
+
+
+
+/*------------------INICIO FOOTER----------------------------*/
+/*------------------FIN FOOTER----------------------------*/
