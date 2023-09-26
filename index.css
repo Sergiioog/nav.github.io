@@ -48,7 +48,11 @@ main {
     width: 100%;
 }
 /*------INICIO NAVEGADORES------*/
+<<<<<<< HEAD
 .seccion_navegadores, .seccion_desarrollo {
+=======
+.seccion_navegadores {
+>>>>>>> 3496c70c78f7ab452b0329554bb9b11cbf8168bc
     height: auto;
     width: 100%;
     display: flex;
@@ -154,6 +158,7 @@ main {
     padding-right: 3%;
 }
 
+<<<<<<< HEAD
 /*------FIN NAVEGADORES------*/
 
 /*------INICIO DESARROLLO------*/
@@ -212,6 +217,25 @@ main {
 
 
 
+=======
+
+
+
+
+
+
+
+
+/*------FIN NAVEGADORES------*/
+
+
+
+
+
+
+/*------INICIO DESARROLLO------*/
+
+>>>>>>> 3496c70c78f7ab452b0329554bb9b11cbf8168bc
 /*------FIN DESARROLLO------*/
 
 
