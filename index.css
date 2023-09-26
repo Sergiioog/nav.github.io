@@ -163,7 +163,7 @@ main {
 
 .container_secciones {
     width: 95%;
-    height: 100vh;
+    height: auto;
     margin: 10px;
 }
 
@@ -175,13 +175,12 @@ main {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     height: auto;
-    width: 100%;
     padding: 0;
     margin: auto;
     margin-top: 50px;
+    width: 80%;
 }
 .front_titulo {
-    background-color: beige;
     height: 5%;
     width: 100%;
     margin: auto;
@@ -191,8 +190,7 @@ main {
     font-size: 20px;
 }
 .front_cuerpo {
-    background-color: red;
-    margin: 10px;   
+    margin: 10px;
     height: 70%;
     text-align: justify;
 
@@ -247,24 +245,22 @@ main {
 }
 
 .container_front {
-    background-color: aqua;
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 0;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .front_titulo {
-    background-color: beige;
-    height: 5%;
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 }
 .front_cuerpo {
-    background-color: brown;
     padding: 10px;
     margin-top: 10px;
     text-align: justify;
@@ -284,7 +280,6 @@ main {
 
 
 .container_back {
-    background-color: aquamarine;
     height: 100%;
     width: 100%;
     margin: 0;
