@@ -1,27 +1,28 @@
 .titulo {
     background-color: red;
-    margin: 0;
-    padding: 0;
-    top: 0;
+    
 }
-#home_navegadores, #home_desarrollo {
-    background-color: azure;
-    width: 100%;
+.home_navegadores,.home_desarrollo{
+    background: rgba(232, 223, 223, 0.801);
+box-shadow: 0 8px 32px 0 rgba(105, 107, 129, 0.37);
+backdrop-filter: blur( 14.5px );
+-webkit-backdrop-filter: blur( 14.5px );
+border-radius: 10px;
+    width: 90%;
+    margin: auto;
     height: 50vh;
 }
-#home_desarrollo {
+.home_desarrollo {
     margin-top: 50px;
     margin-bottom: 20px;
 }
 .home_datos {
-    background-color:aquamarine;
     height: 50%;
     width: 100%;
     display: flex;
     ;
 }
 .home_descripcion {
-    background-color: antiquewhite;
     height: 0%;
     text-align: justify;
     margin-left: 2%;
@@ -29,22 +30,41 @@
     /*Mirar como quitar el margen de los contenedores*/
 }
 .introducción {
-    background-color: rgb(162, 133, 133);
     width: 50%;
     height: 90%;
     text-align: justify;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top:2%
+    margin-top:2%;
 }
 .foto {
-    background-color: blue;
-    width: 50%;
-    height: 90%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top:2%
+    width: 60%;
+    height: 85%;
+    margin-top: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
 }
+.foto, img {
+    max-width: 100%;
+  
+}
+
+.divBoton {
+    height: 40px;
+    display: flex;
+    justify-content: center ;
+}
+.bot {
+    height: 80%;
+    width: 30%;
+    margin: auto;
+}
+
+
+
+
 .home_descripcion {
     
 
