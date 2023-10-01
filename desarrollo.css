@@ -1,0 +1,274 @@
+body {
+    background-image: url('assets/images/fondo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    
+}
+/*------------------INICIO HEADER----------------------------*/
+header {
+    height: 5vh;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.links_pagina {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: rgba( 240, 207, 207, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba(126, 126, 133, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.links_pagina, a {
+    text-decoration: none;
+    margin: 15px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    
+}
+.links_pagina a:hover {
+    transform: translateY(-2px);
+}
+/*------------------FIN HEADER----------------------------*/
+/*------------------INICIO BODY----------------------------*/
+main {
+    height: 95vh;
+    width: 100%;
+    
+}
+
+
+.titulo {
+    background: rgba(195, 178, 178, 0.396);
+    box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.title{
+    font-size: 18px;
+}
+
+
+.seccion_navegadores {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*--------TARJETAS-------*/
+.card_front,.card_backend {
+    height: auto; /*ANOTACION: SI LO DEJO EN AUTO LA IMAGEN SE ONE RARA*/
+    width: 80%;
+
+    display: flex;
+    flex-direction: column; /* Cambiar a dirección de columna para apilar seccion1 y seccion2 */
+    background: rgba(247, 231, 231, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    margin-right: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+    margin: auto;
+
+
+}
+.card_front {
+    margin-bottom: 10vh;
+}
+.nav_card:hover {
+    transform: translateY(-2px);
+}
+.title_tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleprinc{
+    font-size:16px ;
+}
+.sec_img {
+    width: 100%;
+    height: 45%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.imgcont {
+  
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+figure, img {
+    width: 90%;
+    height: auto;
+    
+}
+
+.sec_desc {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    word-wrap: break-word; /* Rompe palabras largas para evitar que el contenido se desborde */
+    overflow: scroll; /* Oculta cualquier contenido que sobresalga del div */
+    font-size: 12px;
+}
+
+
+/*-------- FIN TARJETAS-------*/
+
+@media screen and (min-width:320px) and (max-width:375px){
+
+    .sec_desc,p {
+        font-size: 12px;
+    }
+    
+    .titleprinc{
+        font-size:16px ;
+    }
+    
+ }
+ @media screen and (min-width:375px) and (max-width:425px){
+    .sec_desc,p {
+        font-size: 12px;
+    }
+    .titleprinc{
+        font-size:20px ;
+    }
+ }
+ @media screen and (min-width:425px) and (max-width:768px){
+    .sec_desc,p {
+        font-size: 14px;
+    }
+    
+    .titleprinc{
+        font-size:22px ;
+    }
+ }
+ @media screen and (min-width:768px) and (max-width:1024px){
+    .sec_desc,p {
+        font-size: 16px;
+    }
+    
+    .titleprinc{
+        font-size:22px ;
+    }
+ }
+ @media screen and (min-width:1024px) and (max-width:1440px){
+    .desarrollo_seccion {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas con el mismo ancho */
+        gap: 20px; /* Espacio entre las tarjetas */
+        justify-content: center;
+        align-items: center;
+        /* Otros estilos según sea necesario */
+    }
+    .card_front,.card_backend {
+        height: auto; /*ANOTACION: SI LO DEJO EN AUTO LA IMAGEN SE ONE RARA*/
+        width: 80%;
+    
+        display: flex;
+        flex-direction: column; /* Cambiar a dirección de columna para apilar seccion1 y seccion2 */
+        background: rgba(247, 231, 231, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 10px;
+        margin-right: 10px;
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+        margin: auto;
+    
+    
+    }
+    .sec_desc,p {
+        font-size: 18px;
+    }
+    
+    .titleprinc{
+        font-size:24px ;
+    }
+ }
+ @media screen and (min-width:1440px) and (max-width:2560px){
+    .desarrollo_seccion {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas con el mismo ancho */
+        gap: 20px; /* Espacio entre las tarjetas */
+        justify-content: center;
+        align-items: center;
+
+    }
+    .card_front,.card_backend {
+        height: auto; /*ANOTACION: SI LO DEJO EN AUTO LA IMAGEN SE ONE RARA*/
+        width: 80%;
+    
+        display: flex;
+        flex-direction: column; /* Cambiar a dirección de columna para apilar seccion1 y seccion2 */
+        background: rgba(247, 231, 231, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 10px;
+        margin-right: 10px;
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+        margin: auto;
+    
+    
+    }
+    .sec_desc,p {
+        font-size: 18px;
+    }
+    
+    .titleprinc{
+        font-size:24px ;
+    }
+    .card_front {
+        margin-top: 5vh;
+    }
+    .imgcont {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+ }
