@@ -111,9 +111,11 @@ header {
 
 }
 .foto, img{
-    max-width: 100%;
-    height: auto;
-    width: 80;
+    max-width: 90%;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    margin: auto;
 }
 
 .divBoton {
@@ -127,16 +129,16 @@ header {
     width: auto;
     margin: auto;
     font-size: 10px;
-    background-color: #888; /* Color grisáceo */
-    color: #fff; /* Color del texto */
+    background-color: #888; 
+    color: #fff; 
 
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s; /* Transición de color al hacer hover */
+    transition: background-color 0.3s; 
 }
 .bot:hover {
-    background-color: #555; /* Nuevo color al hacer hover */
+    background-color: #555;
 }
 
 
@@ -164,6 +166,11 @@ header {
         width: auto;
         font-size: 12px;
     }
+    .foto, img{
+        max-width: 90%;
+        height: 80%;
+        width: 90%;
+    }
    
 }
 @media screen and (min-width:375px) and (max-width:425px){
@@ -188,6 +195,11 @@ header {
         width: auto;
         font-size: 14px;
         
+    }
+    .foto, img{
+        max-width: 70%;
+        height: 80%;
+        width: 70%;
     }
 }
 @media screen and (min-width:425px) and (max-width:768px){
@@ -227,9 +239,9 @@ header {
     
     }
     .foto, img{
-        max-width: 100%;
-        height: 100%;
-        width: 80%;
+        max-width: 70%;
+        height: 80%;
+        width: 60%;
     }
 }
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -280,9 +292,9 @@ header {
     
     }
     .foto, img{
-        max-width: 100%;
-        height: 100%;
-        width: 60%;
+        max-width: 35%;
+        height: 80%;
+        width: 35%;
     }
 }
 @media screen and (min-width:1024px) and (max-width:1440px){
@@ -328,13 +340,14 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        
     
     
     }
     .foto, img{
-        max-width: 100%;
-        height: 100%;
-        width: 75%;
+        max-width: 30%;
+        height: 80%;
+        width: 30%;
     }
 }
 @media screen and (min-width:1440px) and (max-width:2560px){
@@ -391,9 +404,9 @@ header {
     
     }
     .foto, img{
-        max-width: 100%;
-        height: 100%;
-        width: 50%;
+        max-width: 40%;
+        height: 80%;
+        width: 40%;
     }
     .home_navegadores,.home_desarrollo{
         background: rgba(232, 223, 223, 0.801);
@@ -408,8 +421,7 @@ header {
     .home_navegadores {
         margin-bottom: 10vh;
         margin-top: 10vh;
-        margin-right: 10vh;
-        margin-left: 10vh;
+        
     }
 }
 
