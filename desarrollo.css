@@ -234,26 +234,26 @@ figure, img {
         gap: 20px; /* Espacio entre las tarjetas */
         justify-content: center;
         align-items: center;
-
+        margin-top: 10vh;
     }
     .card_front,.card_backend {
-        height: auto; /*ANOTACION: SI LO DEJO EN AUTO LA IMAGEN SE ONE RARA*/
+    
+        height: 50vh; /*ANOTACION: SI LO DEJO EN AUTO LA IMAGEN SE ONE RARA*/
         width: 80%;
     
         display: flex;
-        flex-direction: column; /* Cambiar a dirección de columna para apilar seccion1 y seccion2 */
+        flex-direction: column; /*Cambiar a columna para apilar seccion1 y seccion2*/
         background: rgba(247, 231, 231, 0.25);
         box-shadow: 0 8px 32px 0 rgba(92, 93, 117, 0.37);
         backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(7px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
-        padding: 10px;
-        margin-right: 10px;
+        
         transform: translateY(0);
         transition: transform 0.3s ease-in-out;
         margin: auto;
-    
+
     
     }
     .sec_desc,p {
@@ -263,9 +263,7 @@ figure, img {
     .titleprinc{
         font-size:24px ;
     }
-    .card_front {
-        margin-top: 5vh;
-    }
+   
     .imgcont {
         width: 80%;
         margin: auto;
